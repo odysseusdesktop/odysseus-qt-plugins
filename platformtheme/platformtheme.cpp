@@ -43,7 +43,7 @@ extern void updateXdgIconSystemTheme();
 
 void onDarkModeChanged()
 {
-    QStyle *style = QStyleFactory::create("cyber");
+    QStyle *style = QStyleFactory::create("odysseus");
     if (style) {
         qApp->setStyle(style);
     }

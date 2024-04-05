@@ -13,7 +13,7 @@ void updateXdgIconSystemTheme()
 class PlatformThemePlugin : public QPlatformThemePlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID QPlatformThemeFactoryInterface_iid FILE "cyber-platformtheme.json")
+    Q_PLUGIN_METADATA(IID QPlatformThemeFactoryInterface_iid FILE "odysseus-platformtheme.json")
 
 public:
     PlatformThemePlugin(QObject *parent = nullptr)

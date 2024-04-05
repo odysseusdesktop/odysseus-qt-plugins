@@ -49,15 +49,15 @@ qt5_add_dbus_adaptor(SRCS
     StatusNotifierItem
 )
 
-add_library(cyberplatformtheme MODULE ${SRCS})
+add_library(odysseusplatformtheme MODULE ${SRCS})
 
-target_compile_definitions(cyberplatformtheme
+target_compile_definitions(odysseusplatformtheme
     PRIVATE
         "QT_NO_FOREACH"
         "LIB_FM_QT_SONAME=\"${LIB_FM_QT_SONAME}\""
 )
 
-target_link_libraries(cyberplatformtheme PRIVATE
+target_link_libraries(odysseusplatformtheme PRIVATE
     Qt5::GuiPrivate
     Qt5::X11Extras
     Qt5::Widgets
@@ -88,4 +88,4 @@ else()
     message(FATAL_ERROR "Qt5 plugin directory cannot be detected.")
 endif()
 
-install(TARGETS cyberplatformtheme LIBRARY DESTINATION "${QT_PLUGINS_DIR}/platformthemes")
+install(TARGETS odysseusplatformtheme LIBRARY DESTINATION "${QT_PLUGINS_DIR}/platformthemes")

@@ -4536,7 +4536,7 @@ void BaseStyle::unpolish(QWidget *widget)
 
 bool BaseStyle::isDarkMode() const
 {
-    QSettings settings(QSettings::UserScope, "cyberos", "theme");
+    QSettings settings(QSettings::UserScope, "odysseus", "theme");
     return settings.value("DarkMode", false).toBool();
 }
 
